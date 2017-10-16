@@ -7,7 +7,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-    console.log('Current theme: ', this.props.theme);
     return (
       <Container>
         <Row>

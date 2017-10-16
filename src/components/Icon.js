@@ -60,7 +60,7 @@ export default class Icon extends Component {
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={this.props.size ? this.props.size : '24'}>
 			    <title>{Icons[this.props.icon].title}</title>
 			    <desc>{Icons[this.props.icon].desc}</desc>
-			    <g stroke="none" stroke-width="1" fill="none">
+			    <g stroke="none">
 			       <path d={Icons[this.props.icon].path} fill="#000"></path>
 			    </g>
 			</svg>

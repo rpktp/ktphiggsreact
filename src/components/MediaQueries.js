@@ -9,7 +9,6 @@ export const sizes = {
 }
 
 export const media = Object.keys(sizes).reduce((acc, label) => {
-    console.log('length', sizes[label].length);
     if(sizes[label].length > 1) { 
         acc[label] = (...args) => css`
             @media screen and (min-width: ${sizes[label][0] / 16}em) and (max-width: ${sizes[label][1] / 16}em) {
@@ -17,7 +16,6 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
             }
         `
     } else {
-        console.log(sizes[label][0]);
         acc[label] = (...args) => css`
             @media screen and (min-width: ${sizes[label][0] / 16}em) {
                 ${css(...args)}
