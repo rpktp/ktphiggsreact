@@ -69,7 +69,7 @@ export const ButtonGhost = Button.extend`
   }
 `
 
-export const DenseButton = Button.extend`
+export const ButtonDense = Button.extend`
   padding: 0 12px;
   line-height: 36px;
 
@@ -81,7 +81,7 @@ export const DenseButton = Button.extend`
   }
 `
 
-export const SecondaryButton = Button.extend`
+export const ButtonSecondary = Button.extend`
   background-color: ${props => props.theme.accentColorOne ? props.theme.accentColorOne : 'white' };
 
   &:hover {
@@ -94,7 +94,7 @@ export const SecondaryButton = Button.extend`
   }
 `
 
-export const SecondaryGhostButton = SecondaryButton.extend`
+export const ButtonSecondaryGhost = ButtonSecondary.extend`
   background-color: transparent;
   color: ${props => props.disabled ? props.theme.white : props.theme.accentColorOne };
   border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.accentColorOne };
@@ -132,7 +132,7 @@ export const SecondaryGhostButton = SecondaryButton.extend`
   }
 `
 
-export const InverseButton = Button.extend`
+export const ButtonInverse = Button.extend`
   background-color: ${props => props.theme.white ? props.theme.white : 'white' };
   color: ${props => props.theme.primaryColor ? props.theme.primaryColor : 'white' };
 
@@ -162,7 +162,7 @@ export const InverseButton = Button.extend`
   }
 `
 
-export const InverseGhostButton = InverseButton.extend`
+export const ButtonInverseGhost = ButtonInverse.extend`
   background-color: transparent;
   color: ${props => props.disabled ? props.theme.white : 'white' };
   border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.white };

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTheme } from 'styled-components';
 import { Container, Col, Row } from './components/Grid';
-import { Button, ButtonGhost, DenseButton, SecondaryButton, SecondaryGhostButton, InverseButton, InverseGhostButton }  from './components/Button';
+import { Button, ButtonGhost, ButtonDense, ButtonSecondary, ButtonSecondaryGhost, ButtonInverse, ButtonInverseGhost }  from './components/Button';
 import Icon from './components/Icon';
 import './App.css';
 
@@ -13,14 +13,14 @@ class App extends Component {
           <Col>
             <Button>Normal Button</Button> 
             <Button><Icon icon="shoppingCart" /> Normal Button with Icon</Button><br /><br />
-            <Button disabled>Disabled Button</Button> <Button disabled><Icon icon="shoppingCart" /> Disabled Button with Icon</Button><br /><br />
-            <ButtonGhost>Ghost Button</ButtonGhost> <ButtonGhost><Icon icon="shoppingCart" /> Ghost Button with Icon</ButtonGhost><br /><br />
-            <DenseButton>Dense Button</DenseButton> <DenseButton><Icon icon="shoppingCart" /> Dense Button with Icon</DenseButton><br /><br />
-            <SecondaryButton>Secondary Button</SecondaryButton> <SecondaryButton><Icon icon="shoppingCart" /> Secondary Button with Icon</SecondaryButton><br /><br />
-            <SecondaryGhostButton>Secondary Ghost Button</SecondaryGhostButton> <SecondaryGhostButton><Icon icon="shoppingCart" /> Secondary Ghost Button with Icon</SecondaryGhostButton><br /><br />
+            <Button disabled>Disabled Button</Button> <br /><br />
+            <ButtonGhost>Ghost Button</ButtonGhost><br /><br />
+            <ButtonDense>Dense Button</ButtonDense> <br /><br />
+            <ButtonSecondary>Secondary Button</ButtonSecondary> <br /><br />
+            <ButtonSecondaryGhost>Secondary Ghost Button</ButtonSecondaryGhost>
             <div className="darkDiv">
-              <InverseButton>Inverse Button</InverseButton> <InverseButton><Icon icon="shoppingCart" /> Inverse Button with Icon</InverseButton><br /><br />
-              <InverseGhostButton>Inverse Ghost Button</InverseGhostButton>  <InverseGhostButton><Icon icon="shoppingCart" /> Inverse Button with Icon</InverseGhostButton>
+              <ButtonInverse>Inverse Button</ButtonInverse><br />
+              <ButtonInverseGhost>Inverse Ghost Button</ButtonInverseGhost> 
             </div>
             <Icon icon="shoppingCart" size="16"/>
             <Icon icon="accountCircle" size="24" />
