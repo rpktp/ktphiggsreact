@@ -35,45 +35,9 @@ export const Button = styled.button`
   &:active {
     background-color: ${props => props.theme.secondaryColor ? props.theme.secondaryColor : 'white' };
   }
-
-  ${props => props.ghost && css`
-
-    background-color: transparent;
-    color: ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };
-    border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };
-
-    &:hover {
-      color: ${props => props.disabled ? props.theme.white : props.theme.white };
-      border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.primaryColor };
-
-      & svg {
-
-        & path {
-          fill: ${props => props.disabled ? props.theme.white : props.theme.white };
-        }
-      }
-    }
-
-    & svg {
-
-      & path {
-        fill: ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };
-      }
-    }
-
-    &:focus,
-    &:active {
-      color: ${props => props.disabled ? props.theme.white : props.theme.white };
-      background-color: ${props => props.theme.secondaryColor ? props.theme.secondaryColor : 'white' };
-      border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };
-    }
-
-  `}
-
-
 `
 
-export const GhostButton = Button.extend`
+export const ButtonGhost = Button.extend`
   background-color: transparent;
   color: ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };
   border: 2px solid ${props => props.disabled ? props.theme.white : props.theme.secondaryColor };

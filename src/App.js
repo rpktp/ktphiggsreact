@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTheme } from 'styled-components';
 import { Container, Col, Row } from './components/Grid';
-import { Button, GhostButton, DenseButton, SecondaryButton, SecondaryGhostButton, InverseButton, InverseGhostButton }  from './components/Button';
+import { Button, ButtonGhost, DenseButton, SecondaryButton, SecondaryGhostButton, InverseButton, InverseGhostButton }  from './components/Button';
 import Icon from './components/Icon';
 import './App.css';
 
@@ -14,8 +14,7 @@ class App extends Component {
             <Button>Normal Button</Button> 
             <Button><Icon icon="shoppingCart" /> Normal Button with Icon</Button><br /><br />
             <Button disabled>Disabled Button</Button> <Button disabled><Icon icon="shoppingCart" /> Disabled Button with Icon</Button><br /><br />
-            <Button ghost>Ghost Button</Button> <br /><br />
-            <GhostButton>Ghost Button</GhostButton> <GhostButton><Icon icon="shoppingCart" /> Ghost Button with Icon</GhostButton><br /><br />
+            <ButtonGhost>Ghost Button</ButtonGhost> <ButtonGhost><Icon icon="shoppingCart" /> Ghost Button with Icon</ButtonGhost><br /><br />
             <DenseButton>Dense Button</DenseButton> <DenseButton><Icon icon="shoppingCart" /> Dense Button with Icon</DenseButton><br /><br />
             <SecondaryButton>Secondary Button</SecondaryButton> <SecondaryButton><Icon icon="shoppingCart" /> Secondary Button with Icon</SecondaryButton><br /><br />
             <SecondaryGhostButton>Secondary Ghost Button</SecondaryGhostButton> <SecondaryGhostButton><Icon icon="shoppingCart" /> Secondary Ghost Button with Icon</SecondaryGhostButton><br /><br />

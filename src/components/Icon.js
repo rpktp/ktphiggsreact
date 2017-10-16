@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 const Icons = {
 	shoppingCart: {
 		title: "Shopping Cart",
