@@ -1,0 +1,149 @@
+@import 'typography';
+@import 'colors';
+
+$button-border-radius:     5rem;
+$button-hover--primary:    $tertiary-six;
+$button-hover--secondary:  #1d2172;
+$button-padding--large: 1.2rem 2.4rem;
+$button-padding--small: 0.9rem 1.2rem;
+
+// overrides keep in this file
+$font-size: 1.6rem;
+
+button,
+.button,
+a.button {
+    display: inline-block;
+    font-family: $primary-font;
+    font-size: $font-size;
+    font-weight: $font-weight--bold;
+    text-align: center;
+    color:white;
+    border: none;
+    cursor: pointer;
+    border-radius: $button-border-radius;
+    text-transform: uppercase;
+
+    &.button-primary--small {
+        @include button-set($accent-color--one, $button-padding--small);
+
+        &:hover {
+            background-color: $button-hover--primary;
+        }
+    }
+
+    &.button-primary--large {
+        @include button-set($accent-color--one, $button-padding--large);
+
+        &:hover {
+		      background-color: $button-hover--primary;
+        }
+    }
+
+    &.button-secondary--small {
+        @include button-set($secondary-color, $button-padding--small);
+
+        &:hover {
+          background-color: $button-hover--secondary;
+        }
+
+        &:active {
+          background-color: $secondary-color;
+        }
+    }
+
+    &.button-secondary--large {
+        @include button-set($secondary-color, $button-padding--large);
+
+        &:hover {
+		      background-color: $button-hover--secondary;
+        }
+
+        &:active {
+          background-color: $secondary-color;
+        }
+    }
+
+    &.button--inactive {
+        cursor: not-allowed;
+        pointer-events: none;
+        @include button-set($shade-three, $button-padding--small);
+        
+    }
+
+    &.button--ghost--small {
+        color: $secondary-color;
+        @include button-set(rgba(255,255,255,0), $button-padding--small);
+        border: 2px solid $secondary-color;
+
+        &:hover {
+            color: $white;
+            background-color: $secondary-color;
+        }
+    }
+
+     &.button--ghost--large {
+        color: $secondary-color;
+        @include button-set(rgba(255,255,255,0), $button-padding--large);
+        border: 2px solid $secondary-color;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: $secondary-color;
+        }
+    }
+
+}
+
+// These classes only exist locally in the Higgs app
+
+.color-success {
+    background-color: $color-success;
+}
+
+.color-warning {
+    background-color: $color-warning;
+}
+
+.color-danger {
+    background-color: $color-danger;
+}
+
+.color-info {
+    background-color: $color-info;
+}
+
+.danger{
+    border: 1px darken($color-danger, 50%);
+    background-color: $color-danger;
+
+    &:hover {
+        background-color: $notification-opacity--danger;
+    }
+}
+
+.success{
+    border: 1px darken($color-success, 50%);
+    background-color: $color-success;
+
+    &:hover {
+        background-color: $notification-opacity--success;
+    }
+}
+
+.warning{
+    border: 1px darken($color-warning, 50%);
+    background-color: $color-warning;
+
+    &:hover {
+        background-color: $notification-opacity--warning;
+    }
+}
+
+.primary-gradient {
+     background: linear-gradient(45deg,  rgb(35,47,132) 0%,rgb(102,51,153) 100%);
+}
+
+.secondary-gradient {
+     background: linear-gradient(45deg,  rgb(9,126,155) 0%,rgb(32,124,202) 5%,rgb(35,174,165) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

@@ -1,0 +1,144 @@
+@import '../_mixins';
+
+// Images links will all be in a stored in these variables
+$quiz-icons-sprite: url(../images/higgs-icon-quiz-sprite.svg);
+$quiz-icons-sprite-v1: url(../images/higgs-icon-quiz-sprite-v1.svg);
+
+// row positions in sprite
+$row-dark-position-y: -0.1rem;
+$row-dark-position-y-r2: -6.1rem;
+$row-light-position-y: -36.1rem;
+$row-light-position-y-r2: -42.1rem;
+
+/////////////////////
+// Quiz UI icons ///
+///////////////////
+.icon-quiz{
+    @include icon-defaults($quiz-icons-sprite);
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+// dark icons
+.icon-up{
+    background-position: 0rem #{$row-dark-position-y};
+}
+
+.icon-down{
+    background-position: -6.1rem #{$row-dark-position-y};
+}
+
+.icon-previous{
+    background-position: -12.2rem #{$row-dark-position-y};
+}
+
+.icon-next{
+    background-position: -18rem #{$row-dark-position-y};
+}
+
+.icon-close{
+    background-position: -24.1rem #{$row-dark-position-y};
+}
+
+.icon-bookmark{
+    background-position: -36.1rem #{$row-dark-position-y};
+}
+
+.icon-hint{
+    background-position: -42.1rem #{$row-dark-position-y};
+}
+
+.icon-check{
+    background-position: -30.1rem #{$row-dark-position-y};
+}
+
+.icon-timer{
+    background-position: -48.1rem #{$row-dark-position-y};
+}
+
+.icon-calendar{
+    background-image: $quiz-icons-sprite-v1;
+    background-position: -57.9rem -3.9rem;
+}
+
+.icon-menu{
+    background-position: -24.1rem #{$row-dark-position-y-r2};
+}
+
+.icon-menu--close{
+    background-position: -18.1rem #{$row-dark-position-y-r2};
+}
+
+.icon-answer--correct{
+    background-position: -0.1rem #{$row-dark-position-y-r2};
+}
+
+.icon-answer--incorrect{
+    background-position: -6.1rem #{$row-dark-position-y-r2};
+}
+
+.icon-answer--skip{
+    background-position: -12.1rem #{$row-dark-position-y-r2};
+}
+
+// light icons
+.icon-up--light {
+    background-position: 0rem #{$row-light-position-y};
+}
+
+.icon-down--light {
+    background-position: -6.1rem #{$row-light-position-y};
+}
+
+.icon-previous--light {
+    background-position: -12.2rem #{$row-light-position-y};
+}
+
+.icon-next--light {
+    background-position: -18rem #{$row-light-position-y};
+}
+
+.icon-close--light {
+    background-position: -24.1rem #{$row-light-position-y};
+}
+
+.icon-bookmark--light {
+    background-position: -36.1rem #{$row-light-position-y};
+}
+
+.icon-hint--light {
+    background-position: -42.1rem #{$row-light-position-y};
+}
+
+.icon-check--light {
+    background-position: -30.1rem #{$row-light-position-y};
+}
+
+.icon-timer--light {
+    background-position: -48.1rem #{$row-light-position-y};
+}
+
+.icon-calendar--light {
+    background-image: $quiz-icons-sprite-v1;
+    background-position: -57.9rem -39.9rem;
+}
+
+.icon-menu--light {
+    background-position: -24.1rem #{$row-light-position-y-r2};
+}
+
+.icon-menu--close--light {
+    background-position: -18.1rem #{$row-light-position-y-r2};
+}
+
+.icon-answer--correct--light {
+    background-position: -0.1rem #{$row-light-position-y-r2};
+}
+
+.icon-answer--incorrect--light {
+    background-position: -6.1rem #{$row-light-position-y-r2};
+}
+
+.icon-answer--skip--light {
+    background-position: -12.1rem #{$row-light-position-y-r2};
+}

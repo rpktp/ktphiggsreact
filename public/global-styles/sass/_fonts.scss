@@ -1,0 +1,13 @@
+/**
+ * Module Dependencies
+ */
+
+@import './sass-import-once';
+
+/**
+ * Exports
+ */
+
+@include exports('_fonts') {
+    @import url('../fonts/OpenSans/stylesheet.css');
+}

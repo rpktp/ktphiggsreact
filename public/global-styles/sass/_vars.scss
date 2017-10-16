@@ -1,0 +1,55 @@
+@import '_mixins';
+
+////////////////////////
+//      COLORS        //
+////////////////////////
+
+// Base Colors
+$primary-color:         rgb(36,15,110);
+$secondary-color:       rgb(0,93,232);
+$background-color:      rgb(244,245,246);
+$black:                 rgb(0,0,0);
+$white:                 rgb(255,255,255);
+
+// Accent Colors - used number suffixes instead of color names in case of changes
+$accent-color--one:        rgb(230,40,153);
+$accent-color--two:        rgb(229,83,2);
+
+// Grey Colors - used number suffixes instead of color names in case of changes
+$grey-color--one:              rgb(34,33,33);
+$grey-color--two:              rgb(180,180,180);
+$grey-color--three:            rgb(224,224,224);
+$grey-color--four:             rgb(249,249,249);
+$shade-one:                    rgb(42,63,71);
+$shade-two:                    rgb(131,145,152);
+$shade-three:                  rgb(210,216,218);
+$shade-four:                   rgb(249,249,249);
+
+// Tertiary Colors
+$tertiary-one:                 rgb(214,8,59);
+$tertiary-two:                 rgb(255,200,46);
+$tertiary-three:               rgb(229,83,2);
+$tertiary-four:                rgb(78,157,45);
+$tertiary-five:                rgb(8,46,207);
+$tertiary-six:                 rgb(171,12,120);
+$tertiary-seven:               rgb(139,166,22);
+
+//Color Variations (Opacity)
+$opacity-color--light:         0.75;
+$opacity-color--lighter:       0.50;
+$opacity-color--lightest:      0.25;
+$opacity-color--none:          0.00;
+
+//Notifications
+$color-success:        rgb(52,132,45);
+$color-warning:        rgb(252,214,108);
+$color-danger:         rgb(196,10,13);
+$color-info:           rgb(0,83,159);
+
+//Notification Colors
+$notification-opacity:  0.30;
+
+$notification-opacity--success:  rgba($color-success, $notification-opacity);
+$notification-opacity--warning:  rgba($color-warning, $notification-opacity);
+$notification-opacity--danger:   rgba($color-danger, $notification-opacity);
+$notification-opacity--info:     rgba($color-info, $notification-opacity);

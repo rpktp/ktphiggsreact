@@ -1,0 +1,69 @@
+@mixin button-set($bg-color, $padding){
+    background-color: $bg-color;
+    padding: $padding;
+}
+
+@mixin rgbvalue {
+    color: rgba(255,255,255, $opacity-color--lighter);
+    white-space: nowrap;
+}
+
+@mixin rgbvalue-dark {
+    color: rgba(0, 0, 0, $opacity-color--lightest);
+    white-space: nowrap;
+}
+// TODO  lets make the prefixing a task within gulp so we can automate the converage and not have this live in out codebase becoming tech dept when it is not longer needed
+@mixin primary-gradient {
+    background: rgb(35,47,132); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgb(35,47,132) 0%, rgb(102,51,153) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgb(35,47,132) 0%,rgb(102,51,153) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgb(35,47,132) 0%,rgb(102,51,153) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232f84', endColorstr='#663399',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin secondary-gradient {
+    background: rgb(9,126,155); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgb(9,126,155) 0%, rgb(32,124,202) 5%, rgb(35,174,165) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgb(9,126,155) 0%,rgb(32,124,202) 5%,rgb(35,174,165) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgb(9,126,155) 0%,rgb(32,124,202) 5%,rgb(35,174,165) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#097e9b', endColorstr='#23aea5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+// icons mixins
+@mixin icon-defaults($bg-image){
+    display: inline-block;
+    position: relative;
+    background-image: $bg-image;
+    background-repeat: no-repeat;
+}
+
+/* @include sprite-offset-generator()
+* :nth-child background image generator for sprites
+* $target-selector
+* $icon-type
+* $icon-answer
+* $top-offset | top position of background image
+* $left-offset | left position of background image
+* $max-children | number of nth-child targets you want to style
+*/
+@mixin sprite-offset-generator($target-selector, $icon-type, $icon-answer, $top-offset, $left-offset, $max-children){
+  @for $i from 1 through $max-children {
+        $left: $left-offset * ($i - 1);
+        $top: $top-offset;
+
+        #{$target-selector}:nth-child(#{$i}) #{$icon-type}#{$icon-answer}{
+            background-position: #{$top}px #{$left}px;
+        }
+    }
+}
+
+///////////////////////
+//      Debug       //
+//////////////////////
+// debug
+@mixin debugBorder($color) {
+    border: 1px dotted #{$color};
+}
+@mixin debugBGColor($color) {
+    background-color: #{$color};
+}

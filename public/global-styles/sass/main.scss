@@ -1,0 +1,16 @@
+@import '_vars';
+@import '_resets';
+@import '_accessiblity';
+@import 'typography';
+@import 'colors';
+@import 'buttons';
+@import 'icons';
+
+body{
+  font-family: $primary-font;
+  color: $grey-color--one;
+}
+
+.hidden {
+  visibility: hidden !important;
+}

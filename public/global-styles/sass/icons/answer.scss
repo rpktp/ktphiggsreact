@@ -1,0 +1,29 @@
+@import '../_mixins';
+
+// answer selection icons
+$answer-choice-sprite: url(../images/answer-choices.svg);
+
+/////////////////////
+// answer selection icons ///
+///////////////////
+
+.answer-selection__item{
+
+    .icon-as{
+        @include icon-defaults($answer-choice-sprite);
+        top: 1.15rem;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/*default icon position*/
+@include sprite-offset-generator('.answer-selection__item', '.icon-as', '', 0, -40, 8);
+/*selected answer*/
+@include sprite-offset-generator('.answer-selection__item', '.icon-as', '.icon-as__item--selected', -40, -40, 8);
+/*wrong answer*/
+@include sprite-offset-generator('.answer-selection__item', '.icon-as', '.icon-as__item--incorrect', -80, -40, 8);
+/*correct answer*/
+@include sprite-offset-generator('.answer-selection__item', '.icon-as', '.icon-as__item--selected-and-correct', -120, -40, 8);
+/*missed answer*/
+@include sprite-offset-generator('.answer-selection__item', '.icon-as', '.icon-as__item--unselected-and-correct', -160, -40, 8);

@@ -1,0 +1,92 @@
+@import '_vars';
+
+/********************
+Base Color Classes
+*********************/
+.color--primary {
+    color: $primary-color;
+}        
+.color--secondary {
+    color: $secondary-color;
+}
+
+/********************
+Accent Color Classes
+*********************/
+.color-accent--one {
+    color:  $accent-color--one;
+}          
+.color-accent--two {
+    color: $accent-color--two;
+}
+
+/********************
+Grey  Colors Classes
+*********************/
+.color-grey--one {
+    color: $grey-color--one;
+}
+.color-grey--two {
+    color: $grey-color--two;  
+}
+.color-grey--three {
+    color: $grey-color--three;
+}        
+.color-grey--four {
+    color: $grey-color--four;
+}   
+
+/********************
+Base Color Background Classes
+*********************/
+.primary-color--background {
+    background-color: $primary-color;
+}        
+.secondary-color--background {
+    background-color: $secondary-color;
+}      
+.background-color--base {
+    background-color: $background-color;
+}      
+
+/********************
+Accent Color Background Classes
+*********************/
+.accent-color-background--one {
+    background-color:  $accent-color--one;
+}          
+.accent-color-background--two {
+    background-color: $accent-color--two;
+}
+
+/********************
+Grey Background Colors 
+*********************/
+.grey-color-background--one {
+    background-color: $grey-color--one;
+}
+.grey-color-background--two {
+    background-color: $grey-color--two;  
+}
+.grey-color-background--three {
+    background-color: $grey-color--three;
+}        
+.grey-color-background--four {
+    background-color: $grey-color--four;
+}
+
+/********************
+Notifications classes 
+*********************/
+.notification-success {
+    background-color: $notification-opacity--success;
+}
+.notification-warning {
+    background-color: $notification-opacity--warning;
+}
+.notification-info {
+    background-color: $notification-opacity--info;
+}
+.notification-danger {
+    background-color: $notification-opacity--danger;
+}
